@@ -26,5 +26,51 @@
         <input type="submit" value="제출" onclick="alert('설문에 응해주셔서 감사합니다.')"><br>
         </div>
     </form>
+    <hr>
+    <form action="" method="post" name="forml">
+        이름을 입력하세요: <input type="text" required placeholder="홍길"><br>
+        자기소개를 하세요: <input type="text" placeholder="자기소개 입력"><br>
+        키를 입력하세요(10cm단위입니다.)
+        <input type="number" min="140" max="200" step="10" value="160"><br>
+        <input type="range" min="1" max="10" value="5"><br>
+        제일 좋아하는 색을 선택해주세요 <input type="color"><br>
+        비밀번호를 잃었을때 질문 리스트<br>
+        <select name="password" id="password_1">
+            <option value="1">나의 살던 고향은</option>
+            <option value="2">내가 키우던 동물의 이름은</option>
+            <option value="3">나의 생일은</option>
+            <option value="4">나의 살던 고향은</option>
+            <option value="5">나의 살던 고향은</option>
+        </select><br>
+
+        데이터리스트를 연습하기위한 질문<br>
+        <input list="browsers" name="browsers">
+        <datalist id="browsers">
+            <option value="크롬"></option>
+            <option value="wale"></option>
+            <option value="edge"></option>
+            <option value="explorer"></option>
+            <option value="크롬"></option>
+        </datalist><br>
+        <input type="reset" value="초기화" name="reset">
+        <input type="submit" value="제출" name="sumbit">
+    </form>
+    <hr>
+    <h1>2023년 1학년 1학기 중간 기출 문제 짭</h1>
+    <hr>
+    <h2>다음 문제로 옳은 것은?</h2>
+    <fieldset style="background-color: lightgray;">
+        <legend><보기></legend>
+        <img src="https://t1.daumcdn.net/cfile/tistory/2230043F546449EF26" alt=""><br>
+        <input type="text" name="text1" placeholder="알잘딱"><br>
+        <input type="text" name="text2" placeholder="해라"><br>
+        ① 1, 23<input type="radio" name="mathtest" value="01"><br>
+        ② 4,32<input type="radio" name="mathtest" value="02"><br>
+        ③ 31,5<input type="radio" name="mathtest" value="03"><br>
+        ④ 7,41<input type="radio" name="mathtest" value="04"><br>
+        ⑤ 81,95<input type="radio" name="mathtest" value="05"><br>
+        서술형 답안을 제출하세요
+        <input type="file" accept="image/img, image/PNG">
+    </fieldset>
 </body>
 </html>
