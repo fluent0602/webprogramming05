@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="survey" method="post">
+        <h1>좋아하는 유튜버 설문조사</h1>
+        <div style="background-color: lightgray">
+        가장 좋아하는 유튜버<br>
+        생년월일: <input type="date" name="age"><br>
+        성별: 남성<input type="radio" name="gender" value="male">
+              여성<input type="radio" name="gender" value="female"><br>
+        직업: <input type="text" name="job"><br>
+        연봉: <input type="text" name="income"><br>
+        <hr>
+        1위: <input type="text" name="first"><br>
+        <textarea name="why1" id="" cols="30" rows="3">좋아하는 이유를 적어주세요.</textarea><br>
+        2위: <input type="text" name="second"><br>
+        <textarea name="why2" id="" cols="30" rows="3">좋아하는 이유를 적어주세요.</textarea><br>
+        3위: <input type="text" name="third"><br>
+        <textarea name="why3" id="" cols="30" rows="3">좋아하는 이유를 적어주세요.</textarea><br>
+        <input type="submit" value="제출" onclick="alert('설문에 응해주셔서 감사합니다.')"><br>
+        </div>
+    </form>
+</body>
+</html>
