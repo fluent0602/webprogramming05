@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border-bottom: 1px solid gray;
+            border-collapse: collapse;
+        }
+        th {background-color: rgb(59, 59, 59);
+            color: white;
+        }
+        td, th {
+            text-align: center;
+            width: 100px;
+            height: 30px;
+        }
+        tr:nth-child(even) {
+            background-color: lightgray;
+        }
+        tr:hover {
+            background-color: black;
+            color: white;
+            font-size: 150%;
+            border: 3px solid white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>기말고사 성적 리스트</caption>
+        <thead>
+            <th>학번</th><th>이름</th><th>성적</th><th>학점</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td><td>Bill</td><td>98</td><td>A+</td>
+            </tr>
+            <tr>
+                <td>2</td><td>Steve</td><td>89</td><td>B+</td>
+            </tr>
+            <tr>
+                <td>3</td><td>Larry</td><td>93</td><td>A-</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
