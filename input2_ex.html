@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        input[type=text], textarea{
+            width: auto;
+            padding: 12px 20px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 2px solid yellow;
+        }
+
+        input[type=text]:hover{
+            background-color: aqua;
+        }
+     </style>
+</head>
+
+<body>
+
+    <h2>상품 평</h2>
+    <p>받으신 상품을 평가해주세요.</p>
+
+    <div>
+        <form action="process.jsp">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름"><br>
+            <label for="email">이메일</label>
+            <input type="text" id="email" name="email" placeholder="이메일"><br>
+            <label for="subject">상품 평</label>
+            <textarea id="subject" name="subject" placeholder="상품을 평가해주세요." style="height:100px"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
