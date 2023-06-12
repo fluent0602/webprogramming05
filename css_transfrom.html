@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        div         {width: 50px;height: 50px;background-color: yellow;border: 1px solid #000;text-align: center;}
+        div#box2    {background-color: red;     transform: translate(100px, 0px);}
+        div#box3    {background-color: blue;    transform: scale(2, 2)}
+        div#box4    {background-color: green;   transform: rotate(-45deg);}
+        div#box5    {background-color: purple;  transform: skew(30deg);}
+        div#box6    {background-color: purple;  transform: skew(0deg, 130deg);}
+    </style> -->
+    
+    <style>
+        div{background-color: green;    height: 150px;  width: 150px;}
+        .container{background-color: yellow;    border: 1px solid black;}
+        .transformed{backface-visibility: visible;  transform-origin: 50% 42%;  transform: perspective(500px) rotateY(59deg);}
+    </style>
+</head>
+<body>
+    <!-- <div id="box1">1</div>
+    <div id="box2">2</div>
+    <div id="box3">3</div>
+    <div id="box4">4</div>
+    <div id="box5">5</div>
+    <div id="box6">6</div> -->
+
+    <div class="container">
+        <div class="transformed"></div>
+    </div>
+</body>
+</html>
