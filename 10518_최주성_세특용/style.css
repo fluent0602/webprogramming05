@@ -1,0 +1,109 @@
+@font-face {
+    font-family: abster;
+    src: url(font/abster-webfont.woff) format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/img.jpg);
+    background-size: cover;
+}
+
+.container .header{
+    width: 80%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 2px solid #ffffff44;
+}
+
+.container .header h1 a{
+    color: white;
+    text-decoration: none;
+    font-family: abster;
+}
+
+.container .nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.container .nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.container .nav ul li a:hover{
+    color: skyblue;
+    text-decoration: none;
+}
+
+.container .hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    padding: 25px 40px;
+    border: 2px solid #ffffff44;
+    border-radius: 30px;
+}
+
+.container .hero h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.container .hero .first{
+    font-size: 22px;
+}
+
+.container .hero .second{
+    
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+.container .hero button{
+    background: none;
+    border: 2px solid darkseagreen;
+    padding: 15px 20px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+    font-size: 15px;
+}
+
+.container .hero button:hover{
+    background-color: darkslategray;
+}
+
+.container .bottom{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff66;
+}
+
+.container .bottom p{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 7px auto;
+    font-weight: 900;
+    font-size: 17px;
+    color: black;
+}
