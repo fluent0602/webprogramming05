@@ -1,0 +1,9 @@
+.box {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: white;
+}
+
