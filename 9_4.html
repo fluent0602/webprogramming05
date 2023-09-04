@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let d1 = new Date(2023, 7, 21, 0, 0, 0);
+        // let d2 = new Date("January 21, 2023 10:00:00");
+        // document.write("2023, 7, 21 =====>  " + d1 + "<br>");
+        // document.write("2023, 7, 21 =====>  " + d2 + "<br>");
+
+
+        // let today = new Date();
+        // document.write(today + "<br>");
+        // document.write(today.getFullYear() + "년<br>");
+        // document.write(today.getMonth() + 1 + "월<br>");
+        // document.write(today.getDate() + "일<br>");
+        // document.write(today.getHours() + "시<br>");
+        // document.write(today.getMinutes() + "분<br>");
+        // document.write(today.getSeconds() + "초<br>");
+        // document.write(today.toLocaleString() + "<br>");
+
+
+        let today = new Date("09/04/2023");
+        let d_day = new Date("09/30/2023");
+        let diff = d_day.getTime() - today.getTime();
+        let diff_days = diff / (1000*3600*24);
+
+        document.write(
+            today + "<br> 와 <br>"
+            + d_day + "<br> 날짜 간의 총 일수 :"
+            + diff_days
+        );
+    </script>
+</body>
+</html>
