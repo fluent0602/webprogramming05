@@ -1,0 +1,21 @@
+
+<html><head>
+    <title>Calculator</title>
+    <script>
+        function add() {
+            let num1 = document.getElementById("x").value;
+            let num2 = document.getElementById("y").value;
+            document.getElementById("sum").value = parseInt(num1) + parseInt(num2);
+        }
+    </script>
+</head>
+<body>
+    <h1>10518_최주성</h1>
+    <h3>덧셈 계산기</h3>
+    <form name="myform" action="..." method="POST">
+        첫번째 정수:         <input id="x" type="text"/><br/>
+        두번째 정수:         <input id="y" type="text"/><br/>
+        합계:          <input id="sum" type="text"/><br/>
+        <input type="button" value="계산" onclick="add()">
+    </form>
+</body></html>
