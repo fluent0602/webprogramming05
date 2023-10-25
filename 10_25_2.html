@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table id="special">
+        <tr>
+            <td>(1, 1) 셀</td>
+            <td>(1, 2) 셀</td>
+        </tr>
+        <tr>
+            <td>(2, 1) 셀</td>
+            <td>(2, 2) 셀</td>
+        </tr>
+    </table>
+    <br>
+
+    <button onclick="insert()">행 추가</button>
+    <button onclick="remove()">행 제거</button>
+
+    <script>
+        function insert() {
+            let table = document.getElementById("special");
+            let row = table.insertRow(0);
+            let cell1 = row.insertCell(0);
+            let cell2 = row.insertCell(1);
+            cell1.innerHTML = "새로운 셀 (1, 1)";
+            cell2.innerHTML = "새로운 셀 (1, 2)";
+        }
+        function remove() {
+            let table = document.getElementById("special");
+            if(table.rows.length <= 1) {
+                alert("더이상 지울 수 없습니다.");
+            }
+            else {
+                let table = document.getElementById("special");
+                let row = table.deleteRow(0);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

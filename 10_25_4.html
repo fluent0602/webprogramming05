@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>주사위 굴리기</title>
+    <style>
+        * {
+            font-family: 굴림, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            display: inline-flex;
+        }
+
+        .dice {
+            height: 100px;
+            width: 100px;
+            margin: 10px 50px;
+            background-color: yellow;
+            border: 1px solid gray;
+            border-radius: 10px;
+            font-size: 100px;
+        }
+
+        
+    </style>
+    <script>
+        function roll() {
+            let dices = document.getElementById("container").childNodes;
+            for (let i = 0; i < dices.length; i ++) {
+                dices[i].innerHTML = floor(Math.random()*6) + 1;
+            }
+            
+        };
+    </script>
+</head>
+
+<body>
+    <h3>주사위 굴리기 게임입니다.</h3>
+    <div class="container">
+        <p class="dice"> </p>
+        <p class="dice"> </p>
+        <p class="dice"> </p>
+    </div>
+    <button onclick="roll()">주사위 굴리기</button>
+</body>
+
+</html>
