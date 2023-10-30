@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #container {
+            background-color: yellow;
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function mouseOver() {
+            document.getElementById("container").innerHTML = "감사합니다.";
+        }
+        function mouseOut() {
+            document.getElementById("container").innerHTML = "마우스를 올려주세요!";
+        }
+    </script>
+    <div id="container" onmouseover="mouseOver()" onmouseout="mouseOut()"> 마우스를 올려주세요! </div>
+</body>
+</html>
